@@ -1,0 +1,88 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Jethro De Real",
+    "dateExported": "2023-04-27T11:43:27.949Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "95e4ab4d-b830-4ae8-ad00-6448c3fe9fbe",
+            "colId": "26f0466f-b8aa-493c-b86f-1398adabbe69",
+            "containerId": "",
+            "name": "REGISTER",
+            "url": "http://localhost:4000/users/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-04-27T11:31:55.008Z",
+            "modified": "2023-04-27T11:31:55.008Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"firstName\": \"Jeth\",\r\n    \"lastName\": \"dereal\",\r\n    \"username\": \"DEREAL\",\r\n    \"password\": \"123456\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "de3bb3e5-26a2-45b6-a744-606f531fcb7d",
+            "colId": "26f0466f-b8aa-493c-b86f-1398adabbe69",
+            "containerId": "",
+            "name": "AUTHENTICATE",
+            "url": "http://localhost:4000/users/authenticate",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-04-27T11:35:42.949Z",
+            "modified": "2023-04-27T11:35:42.949Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"username\": \"DEREAL\",\r\n    \"password\": \"123456\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "06cfa24a-56cb-4d23-9902-e76e87a6f1ad",
+            "colId": "26f0466f-b8aa-493c-b86f-1398adabbe69",
+            "containerId": "",
+            "name": "GET ALL USERS",
+            "url": "http://localhost:4000/users",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-04-27T11:39:20.012Z",
+            "modified": "2023-04-27T11:39:20.012Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsImlhdCI6MTY4MjU5NTI4OSwiZXhwIjoxNjgzMjAwMDg5fQ.JpqfcjQ-60YzfxbSoKaQaNweY7YKQukX8Td_h_mRDag"
+            },
+            "tests": []
+        },
+        {
+            "_id": "2971d893-013a-4c60-8f1c-d3656fde5fa8",
+            "colId": "26f0466f-b8aa-493c-b86f-1398adabbe69",
+            "containerId": "",
+            "name": "UPDATE",
+            "url": "http://localhost:4000/users/2",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2023-04-27T11:42:56.716Z",
+            "modified": "2023-04-27T11:42:56.716Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"firstName\": \"Foo\",\n    \"lastName\": \"Bar\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsImlhdCI6MTY4MjU5NTI4OSwiZXhwIjoxNjgzMjAwMDg5fQ.JpqfcjQ-60YzfxbSoKaQaNweY7YKQukX8Td_h_mRDag"
+            },
+            "tests": []
+        }
+    ]
+}
